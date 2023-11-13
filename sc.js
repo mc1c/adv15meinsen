@@ -5,7 +5,7 @@ function toggleDoor() {
   element.classList.toggle("doorOpen");
 }
 
-var zf = Math.floor(document.documentElement.clientWidth/500)
-var zfp = String(100*zf)+"%"
+var zf = Math.floor((document.documentElement.clientHeight/700)*10)
+var zfp = String(10*zf)+"%"
 document.body.style.zoom = zfp
 console.log(zfp)
