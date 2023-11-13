@@ -1,0 +1,77 @@
+.backDoor
+{
+  background-color: #a96241;
+  position:relative;
+  width:468px;
+  height:600px;
+  
+  margin: 0 auto;
+  margin-top:50px;
+
+
+}
+
+.door
+{
+  background-color: brown;
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:468px;
+  height:600px;
+ 
+  transform-origin: left;
+  /*Speed of the Door animation*/
+  transition: all 2s ease-in-out;
+  z-index: 100;
+}
+
+
+.contentOver {
+    width:438px;
+    height:570px;
+    padding: 15px;
+    overflow-y: scroll;
+}
+
+.centering {
+    text-align: center
+}
+
+.doorOpen
+{
+  z-index: 100;
+  /*prespectiv creates the door open effect*/
+  transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
+}
+
+
+body {
+    background-image: url("bg.jpg");
+    background-color: rgb(141, 85, 30);
+    background-repeat: repeat;
+    z-index: -1;
+
+    font-family: 'Mountains of Christmas';
+    font-size: 28px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(115, 68, 20);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(192, 133, 75);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(192, 134, 75, 0.772);
+  }
