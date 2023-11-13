@@ -47,8 +47,6 @@
 
 
 body {
-    width: 100vw; 
-    height: 100vh;
     background-image: url("bg.jpg");
     background-color: rgb(141, 85, 30);
     background-repeat: repeat;
